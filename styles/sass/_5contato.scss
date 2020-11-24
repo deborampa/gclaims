@@ -1,0 +1,330 @@
+.contato-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contato-texto {
+  text-align: center;
+  width: 100%;
+  flex-grow: 2;
+  margin: 60px 0 30px 0;
+}
+
+.contato-dados {
+  width: 50%;
+  flex-grow: 1;
+  padding-left: 30px;
+
+  ul {
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+
+      a {
+        font-weight: 400;
+        color: $gray;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1.1875rem;
+      }
+
+      img {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $gray;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: $gray;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: $gray;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: $gray;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $gray;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+  color: $gray;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: $gray;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+  color: $gray;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: $gray-light;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: $gray-light;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: $gray-light;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: $gray-light;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: $gray-light;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: $gray-light;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: $gray-light;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+  color: $gray-light;
+}
+
+#form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: $gray;
+
+  border: solid 1px $gray;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: $gray;
+  color: $gray-light;
+}
+
+textarea {
+  width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: $gray;
+  font-size: 0.875em;
+
+  border: solid 1px $gray;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: $gray;
+  color: $gray-light;
+}
+
+#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-size: 0.875em;
+  color: $gray;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px $gray;
+  border-top: none;
+}
+
+#submit:hover {
+  background-color: $blue;
+  color: $gray-light;
+}
+
+// LAPTOP 1024PX
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .contato-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contato-dados {
+    padding-left: 0;
+    width: 100%;
+    ul {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+}
+
+// IPAD
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .contato-flex {
+    padding-top: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      display: flex;
+      margin: 0;
+      text-align: center;
+      max-width: 80%;
+    }
+  }
+
+  .contato-texto {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+
+  #submit {
+    background-color: rgba(142, 216, 248, 0.1);
+    margin-top: 10px;
+    border: solid 1px $gray;
+  }
+
+  .contato-dados {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+  }
+}
+
+// SMARTPHONE
+@media only screen and (max-width: 576px) {
+  .contato-flex {
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contato-dados {
+    padding-top: 30px;
+    padding-left: 0;
+    width: 80%;
+    text-align: center;
+
+    ul {
+      li {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        padding-bottom: 10px;
+
+        a {
+          font-size: 0.9rem;
+          line-height: 1.3rem;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .contato-texto {
+    h3 {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      max-width: 100%;
+      padding-bottom: 0px;
+    }
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 90%;
+
+    input,
+    textarea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    #submit {
+      background-color: rgba(142, 216, 248, 0.1);
+      margin-top: 10px;
+      border: solid 1px $gray;
+      max-width: 100%;
+    }
+  }
+}

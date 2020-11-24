@@ -1,0 +1,45 @@
+.bg-hero {
+  max-width: 90%;
+  padding: 100px 0 100px 0;
+  background-color: rgba(142, 216, 248, 0.1);
+  background-image: url('../assets/header/mapa.svg');
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.flex-hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.foto-hero {
+  align-self: right;
+}
+
+// IPAD
+@media only screen and (max-width: 768px) {
+  .titulo-hero {
+    padding-left: 100px;
+  }
+}
+
+// SMARTPHONE
+@media only screen and (max-width: 576px) {
+  .bg-hero {
+    max-width: 100%;
+    padding: 40px 0 40px 0;
+  }
+
+  .titulo-hero {
+    max-width: 30ch;
+    padding-left: 20px;
+
+    h3 {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+    }
+  }
+}

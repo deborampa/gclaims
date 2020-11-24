@@ -1,0 +1,155 @@
+.demonstracao-bg {
+  background-color: $gray;
+  width: 100vw;
+  // height: 300px;
+}
+
+.demonstracao-flex {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  min-height: 300px;
+}
+
+.demo-img {
+  max-height: 300px;
+  img {
+    align-self: center;
+    max-height: 300px;
+  }
+}
+
+.demo-info-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  height: auto;
+  margin-left: 32px;
+}
+
+.demo-limite {
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.demo-1 {
+  align-self: flex-start;
+}
+
+.demo-2 {
+  flex-direction: column;
+  padding-left: 30px;
+
+  p {
+    color: $white;
+    line-height: 1.8rem;
+  }
+}
+
+.botao {
+  padding-top: 20px;
+
+  button {
+    all: unset;
+    cursor: pointer;
+    background-color: $white;
+    border-radius: 30px;
+    padding: 20px 40px;
+    transition: background-color 0.1s ease;
+    border: 5px solid $gray;
+
+    &:hover {
+      border: 5px solid $blue-light;
+    }
+
+    a {
+      &:hover {
+        color: $blue-light;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 576px) {
+//   .demo-limite {
+//     flex-direction: column;
+//   }
+// }
+
+@media only screen and (max-width: 768px) {
+  .demonstracao-flex {
+    flex-direction: column;
+  }
+
+  .demo-limite {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .demo-1 {
+    padding-top: 20px;
+    align-self: center;
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: none;
+      // max-width: 130px;
+      // padding-bottom: 10px;
+    }
+  }
+
+  .demo-2 {
+    max-width: 400px;
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .demonstracao-flex {
+    margin-top: 20px;
+  }
+}
+
+// SMARTPHONE
+@media only screen and (max-width: 576px) {
+  .demo-info-flex {
+    margin: 0 auto;
+  }
+
+  .botao {
+    button {
+      padding: 10px 20px;
+    }
+  }
+
+  .demo-img {
+    img {
+      height: 200px;
+    }
+  }
+
+  .demonstracao-flex {
+    padding-bottom: 20px;
+  }
+}
