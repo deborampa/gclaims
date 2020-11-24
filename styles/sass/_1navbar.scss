@@ -1,0 +1,58 @@
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 17vh;
+}
+
+.div-flex1 {
+  max-width: 70%;
+  margin-left: 30px;
+}
+
+.div-flex2 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  max-width: 30%;
+
+  a {
+    margin-left: 30px;
+  }
+}
+
+// IPAD
+@media only screen and (max-width: 768px) {
+  .div-flex1 {
+    img {
+      width: 60%;
+    }
+  }
+
+  .div-flex2 {
+    margin-left: 40px;
+    margin-right: 30px;
+  }
+}
+
+// SMARTPHONE
+@media only screen and (max-width: 576px) {
+  .div-flex1 {
+    img {
+      min-width: 90%;
+    }
+  }
+
+  .div-flex2 {
+    max-width: 55%;
+    margin-left: 5px;
+    margin-right: 30px;
+
+    a {
+      font-size: 0.7rem;
+      line-height: 0.8rem;
+    }
+  }
+}

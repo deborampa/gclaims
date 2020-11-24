@@ -1,0 +1,101 @@
+.lead {
+  font-size: 2.125rem;
+}
+
+.contato {
+  font-size: 1.1875rem;
+  line-height: 1.84375rem;
+  color: $gray;
+}
+
+.titulo-hero {
+  max-width: 85ch;
+  color: $gray;
+}
+
+.titulo-patamar {
+  max-width: 30ch;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: 500;
+  line-height: 3.6875rem;
+  letter-spacing: -1px;
+  color: $gray;
+
+  span {
+    border-bottom: 10px solid $blue-light;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: $gray;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: $gray;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $gray;
+}
+
+a {
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.03rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  /* unvisited link */
+  &:link {
+    color: $blue-light;
+  }
+
+  /* visited link */
+  &:visited {
+    color: $blue-light;
+  }
+
+  /* mouse over link */
+  &:hover {
+    color: $blue;
+  }
+
+  /* selected link */
+  &:active {
+    color: $blue-light;
+  }
+}
+
+.text-expl {
+  line-height: 1.4rem;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.color-blue {
+  color: $blue-light;
+}
+
+// SMARTPHONE
+@media only screen and (max-width: 576px) {
+  .titulo-hero {
+    max-width: 100ch;
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
+  }
+}

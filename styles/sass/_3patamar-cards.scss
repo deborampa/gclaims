@@ -1,0 +1,58 @@
+.patamar {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.novo-patamar {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.centralizar-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 230px;
+  text-align: center;
+  margin: 20px;
+}
+
+.card > img {
+  margin-bottom: 20px;
+}
+
+.card > h4 {
+  margin-bottom: 10px;
+}
+
+// IPAD
+@media only screen and (max-width: 768px) {
+  .lead {
+    text-align: center;
+    font-size: 1.8rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+// SMARTPHONE
+@media only screen and (max-width: 576px) {
+  .patamar {
+    margin: 20px auto 0 auto;
+
+    .lead {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
+}
